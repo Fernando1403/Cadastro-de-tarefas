@@ -1,73 +1,68 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<title>To do List</title>
-<link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
+    <meta charset="UTF-8">
+    <title>To do list</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
- 
 <body>
-<main>
- 
-<h1>Cadastre sua tarefa</h1>
- 
-<div>
- 
-<form>
- 
-<label for="tarefa">
-O que é a tarefa?
-</label>
- 
-<input type="text" id="tarefa">
-</form>
- 
-<form>
- 
-<label for="data">
-Data final
-</label>
- 
-<input type="date" id="data">
-</form>
- 
-<form>
- 
-<label for="dificuldade">
-Dificuldade?
-</label>
- 
-<select id="dificuldade">
- 
-<option value="facil">Fácil</option>
-<option value="medio">Médio</option>
-<option value="dificil">Difícil</option>
- 
-</select>
-</form>
- 
-<form>
-    <label> Importante</label>
-    <input type="checkbox" name="Importante" value="checkbox">
-</form>
- 
-</div>
+    <main>
+        <div class="container">
 
-<div class="btn1">
-<input type="button" value="Criar tarefa" id="btn1">
-</div> 
+            <h1 class="titulo">Criar nova tarefa</h1>
+            
+            <div class="formulario ">
+                <form class="vertical tarefa">
+                   
+                    <label for="tarefa">
+                        O que é a tarefa ?
+                    </label>
+                   
+                    <input type="text" id="tarefa">
+                </form>
 
-<h2>Tarefas </h2>
+                <form class="vertical data-final">
+                    <label for="data">
+                        Data final
+                    </label>
+                    <input type="date" id="data">
 
-<ul>
- 
-<li>
-<p></p>
-</li>
-</ul>
-</main>
- 
+                </form>
+
+                <form class="vertical dificuldade">
+                    <label for="dificuldade">
+                        Dificuldade ?
+                    </label>
+
+                    <select id="dificuldade">
+                        <option value="facil">Fácil</option>
+                        <option value="medio">Médio</option>
+                        <option value="dificil">Difícil</option>
+                    </select>
+                    
+                </form>
+
+                <form class="vertical importante" action="importante">
+                    <label for="importante">Importante</label>
+                    <input type="checkbox" id="importante">
+                </form>
+            </div>
+
+            <input type="button" class="btn" value="Criar tarefa" id="btn">
+
+        <section class="section-tarefas">
+        <h1>Tarefas</h1>
+            <ul class="ul">
+
+            </ul>
+        </section>
+        </div>
+
+    </main>
+
+
+<script src="script.js"></script>
 </body>
 </html>
