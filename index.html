@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>To do List</title>
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+ 
+<body>
+<main>
+ 
+<h1>Cadastre sua tarefa</h1>
+ 
+<div>
+ 
+<form>
+ 
+<label for="tarefa">
+O que é a tarefa?
+</label>
+ 
+<input type="text" id="tarefa">
+</form>
+ 
+<form>
+ 
+<label for="data">
+Data final
+</label>
+ 
+<input type="date" id="data">
+</form>
+ 
+<form>
+ 
+<label for="dificuldade">
+Dificuldade?
+</label>
+ 
+<select id="dificuldade">
+ 
+<option value="facil">Fácil</option>
+<option value="medio">Médio</option>
+<option value="dificil">Difícil</option>
+ 
+</select>
+</form>
+ 
+<form>
+    <label> Importante</label>
+    <input type="checkbox" name="Importante" value="checkbox">
+</form>
+ 
+</div>
+
+<div class="btn1">
+<input type="button" value="Criar tarefa" id="btn1">
+</div> 
+
+<h2>Tarefas </h2>
+
+<ul>
+ 
+<li>
+<p></p>
+</li>
+</ul>
+</main>
+ 
+</body>
+</html>
